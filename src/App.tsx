@@ -1,4 +1,5 @@
 import Layout from "./components/layout/Layout"
+import About from "./components/sections/About"
 import Hero from "./components/sections/Hero"
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
     <>
       <Layout >
         <Hero />
+        <About />
       </Layout>
     </>
   )

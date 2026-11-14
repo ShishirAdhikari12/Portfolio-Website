@@ -135,3 +135,9 @@
     @apply min-h-screen;
   }
 }
+
+@layer utilities {
+  .transition-default {
+    @apply transition-all duration-100 ease-in-out;
+  }
+}

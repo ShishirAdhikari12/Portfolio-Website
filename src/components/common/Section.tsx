@@ -15,7 +15,7 @@ export default function Section({
   return (
     <section
       id={id}
-      className={`py-20 md:py-28 bg-background border-b  ${className}`}
+      className={`py-14 md:py-20 bg-background border-b  ${className}`}
     >
       <Container>
         {children}
