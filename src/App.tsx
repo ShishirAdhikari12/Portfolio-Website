@@ -1,8 +1,13 @@
+import Layout from "./components/layout/Layout"
+import Hero from "./components/sections/Hero"
+
 function App() {
 
   return (
     <>
-      <h1>Hero</h1>
+      <Layout >
+        <Hero />
+      </Layout>
     </>
   )
 }

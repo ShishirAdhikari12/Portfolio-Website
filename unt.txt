@@ -1,0 +1,22 @@
+/* Backend-focused
+web developer */
+
+width: 700px;
+height: 150px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 68px;
+line-height: 110%;
+/* or 75px */
+letter-spacing: -0.04em;
+
+color: #F2F5F5;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
