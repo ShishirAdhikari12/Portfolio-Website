@@ -41,22 +41,32 @@ export default function ProjectCard({ project, index, className }: CardProps) {
 
       <div className="flex gap-3 flex-col w-full">
         <div className="flex">
-          <a href={project.links.github}>
+          <a href={project.links.github}
+            target="_blank"
+            rel="noopener noreferrer">
             <SecondaryButton className="bg-secondary">GitHub</SecondaryButton>
           </a>
           <a
             href={project.links.github}
+            target="_blank"
+            rel="noopener noreferrer"
             className="ml-2 text-primary/40 underline text-sm text-nowrap truncate "
             title={project.links.github}
           >{project.links.github}</a>
         </div>
 
         {project.links.liveDemo && <div className="flex">
-          <a href={project.links.liveDemo}>
-            <SecondaryButton className="bg-secondary">Live Demo</SecondaryButton>
+          <a
+            href={project.links.liveDemo}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <SecondaryButton className="bg-secondary text-nowrap ">Live Demo</SecondaryButton>
           </a>
           <a
             href={project.links.liveDemo}
+            target="_blank"
+            rel="noopener noreferrer"
             className="ml-2 text-primary/40 underline text-sm text-nowrap truncate "
             title={project.links.liveDemo}
           >{project.links.liveDemo}</a>
