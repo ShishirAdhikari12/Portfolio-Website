@@ -35,7 +35,7 @@ const Hero = () => {
             <MainButton className="text-sm font-semibold py-4 px-6">
               View Projects
             </MainButton>
-            <button className="text-sm font-medium py-3 px-5 bg-secondary hover:text-foreground transition-default text-secondary-foreground border rounded-md hover:translate-0.5">
+            <button className="text-sm font-medium py-3 px-5 bg-secondary hover:text-foreground hover:bg-primary/30 transition-default text-secondary-foreground border rounded-md hover:translate-0.5">
               Contact Me
             </button>
 

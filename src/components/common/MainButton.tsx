@@ -9,7 +9,7 @@ interface CardProps {
 export default function MainButton({ children, className }: CardProps) {
   return (
     <div className={cn(
-        "bg-primary text-primary-foreground px-4 py-3 rounded-md w-fit cursor-pointer hover:translate-0.5 transition-default ",
+        "bg-primary hover:bg-primary/70 text-primary-foreground px-4 py-3 rounded-md w-fit cursor-pointer hover:translate-0.5 transition-default ",
         className
       )}>
       {children}

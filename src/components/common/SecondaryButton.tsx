@@ -10,7 +10,7 @@ interface CardProps {
 export default function SecondaryButton({ children, className }: CardProps) {
   return (
     <div className={cn(
-      "bg-background text-secondary-foreground text-sm hover:text-foreground hover:bg-secondary px-2 py-1 rounded-md w-fit cursor-pointer flex gap-1 hover:translate-0.5 transition-default ",
+      "bg-background hover:bg-primary/30 text-secondary-foreground text-sm hover:text-foreground px-3 py-2 rounded-md w-fit cursor-pointer flex gap-1 hover:translate-0.5 transition-default ",
       className
     )}>
       <span>

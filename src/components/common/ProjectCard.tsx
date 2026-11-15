@@ -40,7 +40,7 @@ export default function ProjectCard({ project, index, className }: CardProps) {
       <br />
 
       <div className="flex gap-3 flex-col w-full">
-        <div className="flex">
+        <div className="flex items-center">
           <a href={project.links.github}
             target="_blank"
             rel="noopener noreferrer">
@@ -50,12 +50,12 @@ export default function ProjectCard({ project, index, className }: CardProps) {
             href={project.links.github}
             target="_blank"
             rel="noopener noreferrer"
-            className="ml-2 text-primary/40 underline text-sm text-nowrap truncate "
+            className="ml-2 text-primary/40 underline text-sm text-nowrap truncate hover:text-primary/70 "
             title={project.links.github}
           >{project.links.github}</a>
         </div>
 
-        {project.links.liveDemo && <div className="flex">
+        {project.links.liveDemo && <div className="flex items-center">
           <a
             href={project.links.liveDemo}
             target="_blank"
@@ -67,7 +67,7 @@ export default function ProjectCard({ project, index, className }: CardProps) {
             href={project.links.liveDemo}
             target="_blank"
             rel="noopener noreferrer"
-            className="ml-2 text-primary/40 underline text-sm text-nowrap truncate "
+            className="ml-2 text-primary/40 underline text-sm text-nowrap truncate  hover:text-primary/70 "
             title={project.links.liveDemo}
           >{project.links.liveDemo}</a>
         </div>}
