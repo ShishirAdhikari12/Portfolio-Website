@@ -21,7 +21,7 @@ const Hero = () => {
         <div className="w-full lg:w-4/7">
 
           {/* hero title */}
-          <h1 className="text-foreground font-extrabold text-7xl tracking-tighter my-4">
+          <h1 className="text-foreground font-extrabold text-4xl sm:text-5xl md:text-6xl lg:text-7xl tracking-tighter my-4">
             <span>Backend-focused</span><br />
             <span>web developer</span>
           </h1>

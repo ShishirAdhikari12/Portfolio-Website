@@ -6,7 +6,7 @@ export default function ColoredTitle({
   children,
 }: SectionTitleProps) {
   return (
-    <h2 className="font-semibold text-primary text-xs my-4">
+    <h2 className="font-semibold text-primary text-xs my-4 uppercase ">
       {children}
     </h2>
   );
