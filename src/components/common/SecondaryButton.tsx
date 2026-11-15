@@ -1,5 +1,6 @@
 import { cn } from "@/lib/utils";
 import type { ReactNode } from "react";
+import { ArrowUpRight } from "lucide-react";
 
 interface CardProps {
   children: ReactNode;
@@ -15,7 +16,7 @@ export default function SecondaryButton({ children, className }: CardProps) {
       <span>
         {children}
       </span>
-      <span><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-arrow-up-right preview-icon"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></span>
+      <span><ArrowUpRight className="h-4 w-4"/></span>
     </div>
   );
 }

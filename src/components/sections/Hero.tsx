@@ -58,7 +58,7 @@ const Hero = () => {
 
             {/* linkedin */}
             <a
-              href="https://github.com/ShishirAdhikari12"
+              href="https://www.linkedin.com/in/shishir--adhikari/"
               target="_blank"
               rel="noopener noreferrer"
             >
