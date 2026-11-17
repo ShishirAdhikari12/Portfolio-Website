@@ -3,9 +3,10 @@ import MediumText from "../common/MediumText"
 import Section from "../common/Section"
 import SectionTitle from "../common/SectionTitle"
 import { contacts } from "@/data/Contacts"
-import { ArrowUpRight, Copy, Check } from "lucide-react"
+import { ArrowUpRight, Copy, Check, Download } from "lucide-react"
 import { useState } from "react";
 import SmallText from "../common/SmallText"
+import SecondaryButton from "../common/SecondaryButton"
 
 const Contact = () => {
 
@@ -26,7 +27,7 @@ const Contact = () => {
       <MediumText>For role opportunities, collaborations, or project enquiries, get in touch below.</MediumText>
       <div className="m-8"></div>
 
-      <div className="w-full flex ">
+      <div className="w-full flex flex-col md:flex-row">
 
         {/* left half  */}
         <div className="w-1/2 ">
@@ -47,7 +48,8 @@ const Contact = () => {
               onClick={handleCopy}
               className="relative group"
             >
-              <Copy size={18} className="text-foreground hover:text-primary/30 hover:scale-130" />
+              {!copied && <Copy size={18} className="text-foreground hover:text-primary/30 hover:scale-130" />}
+              {copied && <Check size={18} className="text-foreground hover:text-primary/30 hover:scale-130" />}
 
               <span className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2
                 whitespace-nowrap rounded-md bg-background px-3 py-1.5
@@ -59,14 +61,85 @@ const Contact = () => {
 
           </div>
 
-          <div className="mt-10"><SmallText>Contact links and resume should be connected in the final version.</SmallText></div>
+          <div className="flex items-baseline mt-6">
+            <a href="/resume.pdf" download="Shishir_Adhikari_Resume.pdf">
+              <button className="bg-primary/10 hover:bg-primary/30 text-secondary-foreground text-sm hover:text-foreground px-3 py-2 rounded-md w-fit cursor-pointer flex items-center gap-2 hover:translate-0.5 transition-default ">
+                <span>Download Resume</span>
+                <Download className="h-4 w-4" />
+              </button>
+            </a>
+          </div>
+
         </div>
 
         {/* right half  */}
-        <div className="w-1/2">
+        <div className="w-1/2 flex flex-col gap-4">
+          <div className="flex items-baseline">
+            <a href={contacts.github}
+              target="_blank"
+              rel="noopener noreferrer">
+              <SecondaryButton className="bg-primary/10">GitHub</SecondaryButton>
+            </a>
+            <a
+              href={contacts.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="ml-2 text-primary/40 underline text-sm text-nowrap truncate hover:text-primary/70 "
+              title={contacts.github}
+            >{contacts.github}</a>
+          </div>
+
+          <div className="flex items-baseline">
+            <a href={contacts.linkedIn}
+              target="_blank"
+              rel="noopener noreferrer">
+              <SecondaryButton className="bg-primary/10">LinkedIn</SecondaryButton>
+            </a>
+            <a
+              href={contacts.linkedIn}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="ml-2 text-primary/40 underline text-sm text-nowrap truncate hover:text-primary/70 "
+              title={contacts.linkedIn}
+            >{contacts.linkedIn}</a>
+          </div>
+
+          <div className="flex items-baseline">
+            <a href={contacts.x}
+              target="_blank"
+              rel="noopener noreferrer">
+              <SecondaryButton className="bg-primary/10">X</SecondaryButton>
+            </a>
+            <a
+              href={contacts.x}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="ml-2 text-primary/40 underline text-sm text-nowrap truncate hover:text-primary/70 "
+              title={contacts.x}
+            >{contacts.x}</a>
+          </div>
+
+          <div className="flex items-baseline">
+            <a href={contacts.instagram}
+              target="_blank"
+              rel="noopener noreferrer">
+              <SecondaryButton className="bg-primary/10">Instagram</SecondaryButton>
+            </a>
+            <a
+              href={contacts.instagram}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="ml-2 text-primary/40 underline text-sm text-nowrap truncate hover:text-primary/70 "
+              title={contacts.instagram}
+            >{contacts.instagram}</a>
+          </div>
+
 
         </div>
       </div>
+
+
+      <div className="mt-10"><SmallText>Contact links and resume should be connected in the final version.</SmallText></div>
 
     </Section>
   )
