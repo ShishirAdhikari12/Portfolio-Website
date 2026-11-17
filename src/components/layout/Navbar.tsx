@@ -32,7 +32,7 @@ export default function Navbar() {
       >
 
         <a href="/" className="text-lg font-bold tracking-tight">
-          Shishir Adhikari<span className="text-primary">.</span>
+          Shishir Adhikari<span className="text-primary"></span>
         </a>
 
         <div className="flex items-center gap-6 text-sm font-medium text-muted-foreground transition-default ">
