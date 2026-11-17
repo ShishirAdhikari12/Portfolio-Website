@@ -7,13 +7,13 @@ export const skills: Skills[] = [
         skillList: ["Laravel / PHP", "REST API development", "Authentication & authorization"]
     },
     {
-        title: "PRIMARY FOCUS",
-        Heading: "Backend",
-        skillList: ["Laravel / PHP", "REST API development", "Authentication & authorization"]
+        title: "FOUNDATIONS",
+        Heading: "Data & architecture",
+        skillList: ["Relational database design", "Migrations & schema design", "Application structure"]
     },
     {
-        title: "PRIMARY FOCUS",
-        Heading: "Backend",
-        skillList: ["Laravel / PHP", "REST API development", "Authentication & authorization"]
+        title: "SUPPORTING STACK",
+        Heading: "Interface",
+        skillList: ["React / Inertia", "Tailwind CSS", "Responsive UI implementation"]
     },
 ]
