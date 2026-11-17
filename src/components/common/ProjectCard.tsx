@@ -17,7 +17,7 @@ interface CardProps {
 export default function ProjectCard({ project, index, className }: CardProps) {
   return (
     <div className={cn(
-      "bg-card rounded-xl border py-4 px-6 w-full h-fit ",
+      "bg-card rounded-xl border py-4 px-6 w-full h-fit hover:scale-101 transition-default ",
       className
     )}>
 

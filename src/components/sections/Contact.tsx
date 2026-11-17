@@ -38,7 +38,7 @@ const Contact = () => {
             <a
               href="mailto:shishiradhikari1829@example.com"
             >
-              <div className="flex items-center text-foreground hover:text-primary/50 w-fit">
+              <div className="flex items-center text-foreground hover:text-primary/50 w-fit transition-default ">
                 <div className="font-extrabold text-xl sm:text-2xl tracking-wide">{contacts.email}</div>
                 <ArrowUpRight className="h-6 w-6" />
               </div>
@@ -48,13 +48,13 @@ const Contact = () => {
               onClick={handleCopy}
               className="relative group"
             >
-              {!copied && <Copy size={18} className="text-foreground hover:text-primary/30 hover:scale-130" />}
-              {copied && <Check size={18} className="text-foreground hover:text-primary/30 hover:scale-130" />}
+              {!copied && <Copy size={18} className="text-foreground hover:text-primary/30 hover:scale-130 transition-default" />}
+              {copied && <Check size={18} className="text-foreground hover:text-primary/30 hover:scale-130 transition-default" />}
 
               <span className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2
                 whitespace-nowrap rounded-md bg-background px-3 py-1.5
                 text-xs text-foreground opacity-0 group-hover:opacity-100
-                transition-opacity">
+                transition-opacity transition-default ">
                 {copied ? "Copied!" : "Copy email"}
               </span>
             </button>
@@ -84,7 +84,7 @@ const Contact = () => {
               href={contacts.github}
               target="_blank"
               rel="noopener noreferrer"
-              className="ml-2 text-primary/40 underline text-sm text-nowrap truncate hover:text-primary/70 "
+              className="ml-2 text-primary/40 underline text-sm text-nowrap truncate hover:text-primary/70 transition-default "
               title={contacts.github}
             >{contacts.github}</a>
           </div>
@@ -99,7 +99,7 @@ const Contact = () => {
               href={contacts.linkedIn}
               target="_blank"
               rel="noopener noreferrer"
-              className="ml-2 text-primary/40 underline text-sm text-nowrap truncate hover:text-primary/70 "
+              className="ml-2 text-primary/40 underline text-sm text-nowrap truncate hover:text-primary/70 transition-default "
               title={contacts.linkedIn}
             >{contacts.linkedIn}</a>
           </div>
@@ -114,7 +114,7 @@ const Contact = () => {
               href={contacts.x}
               target="_blank"
               rel="noopener noreferrer"
-              className="ml-2 text-primary/40 underline text-sm text-nowrap truncate hover:text-primary/70 "
+              className="ml-2 text-primary/40 underline text-sm text-nowrap truncate hover:text-primary/70 transition-default "
               title={contacts.x}
             >{contacts.x}</a>
           </div>
@@ -129,7 +129,7 @@ const Contact = () => {
               href={contacts.instagram}
               target="_blank"
               rel="noopener noreferrer"
-              className="ml-2 text-primary/40 underline text-sm text-nowrap truncate hover:text-primary/70 "
+              className="ml-2 text-primary/40 underline text-sm text-nowrap truncate hover:text-primary/70 transition-default "
               title={contacts.instagram}
             >{contacts.instagram}</a>
           </div>

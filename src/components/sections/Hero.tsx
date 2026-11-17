@@ -79,7 +79,7 @@ const Hero = () => {
         </div>
 
         {/* right card */}
-        <HeroCard className="w-full h-fit lg:w-2/7">
+        <HeroCard className="w-full h-fit lg:w-2/7 hover:scale-105 transition-all duration-300 ease-in-out">
           <ColoredTitle>TECHNICAL DIRECTION</ColoredTitle>
           <ul className="flex flex-col gap-6">
             <li className="flex flex-col gap-1">

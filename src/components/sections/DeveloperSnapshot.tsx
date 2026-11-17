@@ -21,7 +21,7 @@ const DeveloperSnapshot = () => {
       </div>
 
       {/* three cards  */}
-      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 ">
 
         {/* first card  */}
         <HeroCard>
@@ -59,17 +59,17 @@ const DeveloperSnapshot = () => {
 
               <div>
                 <ul className="text-sm text-secondary-foreground py-4 flex flex-wrap gap-3">
-                  <div className="rounded-full border bg-secondary text-secondary-foreground px-4 py-2 w-fit cursor-pointer hover:bg-primary/30 "><li>Laravel Testing</li></div>
+                  <div className="rounded-full border bg-secondary text-secondary-foreground px-4 py-2 w-fit cursor-pointer hover:bg-primary/30 transition-default"><li>Laravel Testing</li></div>
 
-                  <div className="rounded-full border bg-secondary text-secondary-foreground px-4 py-2 w-fit cursor-pointer hover:bg-primary/30 "><li>REST API Design</li></div>
+                  <div className="rounded-full border bg-secondary text-secondary-foreground px-4 py-2 w-fit cursor-pointer hover:bg-primary/30 transition-default"><li>REST API Design</li></div>
 
-                  <div className="rounded-full border bg-secondary text-secondary-foreground px-4 py-2 w-fit cursor-pointer hover:bg-primary/30 "><li>Docker</li></div>
+                  <div className="rounded-full border bg-secondary text-secondary-foreground px-4 py-2 w-fit cursor-pointer hover:bg-primary/30 transition-default"><li>Docker</li></div>
 
-                  <div className="rounded-full border bg-secondary text-secondary-foreground px-4 py-2 w-fit cursor-pointer hover:bg-primary/30 "><li>PostgreSQL</li></div>
-                  <div className="rounded-full border bg-secondary text-secondary-foreground px-4 py-2 w-fit cursor-pointer hover:bg-primary/30 "><li>System Design</li></div>
-                  <div className="rounded-full border bg-secondary text-secondary-foreground px-4 py-2 w-fit cursor-pointer hover:bg-primary/30 "><li>Performance Optimization</li></div>
-                  <div className="rounded-full border bg-secondary text-secondary-foreground px-4 py-2 w-fit cursor-pointer hover:bg-primary/30 "><li>Git Workflows</li></div>
-                  <div className="rounded-full border bg-secondary text-secondary-foreground px-4 py-2 w-fit cursor-pointer hover:bg-primary/30 "><li>UI/UX Fundamentals</li></div>
+                  <div className="rounded-full border bg-secondary text-secondary-foreground px-4 py-2 w-fit cursor-pointer hover:bg-primary/30 transition-default"><li>PostgreSQL</li></div>
+                  <div className="rounded-full border bg-secondary text-secondary-foreground px-4 py-2 w-fit cursor-pointer hover:bg-primary/30 transition-default"><li>System Design</li></div>
+                  <div className="rounded-full border bg-secondary text-secondary-foreground px-4 py-2 w-fit cursor-pointer hover:bg-primary/30 transition-default"><li>Performance Optimization</li></div>
+                  <div className="rounded-full border bg-secondary text-secondary-foreground px-4 py-2 w-fit cursor-pointer hover:bg-primary/30 transition-default"><li>Git Workflows</li></div>
+                  <div className="rounded-full border bg-secondary text-secondary-foreground px-4 py-2 w-fit cursor-pointer hover:bg-primary/30 transition-default"><li>UI/UX Fundamentals</li></div>
 
                 </ul>
               </div>

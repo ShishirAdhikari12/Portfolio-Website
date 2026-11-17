@@ -4,7 +4,7 @@ import Contact from "./components/sections/Contact"
 import DeveloperSnapshot from "./components/sections/DeveloperSnapshot"
 import Education from "./components/sections/Education"
 import Hero from "./components/sections/Hero"
-import Project from "./components/sections/Project"
+import Projects from "./components/sections/Projects"
 import Skills from "./components/sections/Skills"
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
         <Hero />
         <About />
         <Skills />
-        <Project />
+        <Projects />
         <DeveloperSnapshot />
         <Education />
         <Contact />

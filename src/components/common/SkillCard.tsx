@@ -12,7 +12,7 @@ interface CardProps {
 export default function SkillCard({ className, skillTitle, skillHeading, skillList }: CardProps) {
   return (
     <div className={cn(
-      "bg-card rounded-xl border py-4 px-6 w-full ",
+      "bg-card rounded-xl border py-4 px-6 w-full hover:scale-101 transition-default ",
       className
     )}>
       <div className=" mb-6">

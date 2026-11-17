@@ -5,7 +5,7 @@ import SectionTitle from "../common/SectionTitle"
 import SmallText from "../common/SmallText"
 import { projects } from "@/data/projects"
 
-const Project = () => {
+const Projects = () => {
 
   // console.log(projects);
   const selectedProjects = `Selected Laravel projects: ${projects
@@ -13,7 +13,7 @@ const Project = () => {
     .join(", ")}.`;
 
   return (
-    <Section id="project">
+    <Section id="projects">
       <SectionTitle>
         03 / FEATURED PROJECTS
       </SectionTitle>
@@ -27,7 +27,7 @@ const Project = () => {
       {/* project cards  */}
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-6">
         {projects.map((project, index) => (
-          <ProjectCard key={index} project={project} index={index}/>
+          <ProjectCard key={index} project={project} index={index} />
         ))}
       </div>
 
@@ -36,4 +36,4 @@ const Project = () => {
   )
 }
 
-export default Project
+export default Projects

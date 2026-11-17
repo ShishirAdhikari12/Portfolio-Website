@@ -9,7 +9,7 @@ interface CardProps {
 export default function HeroCard({ children, className }: CardProps) {
   return (
     <div className={cn(
-        "bg-card rounded-xl border py-4 px-6 ",
+        "bg-card rounded-xl border py-4 px-6 hover:scale-101 transition-default ",
         className
       )}>
       {children}
