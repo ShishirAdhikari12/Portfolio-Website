@@ -27,10 +27,10 @@ const Contact = () => {
       <MediumText>For role opportunities, collaborations, or project enquiries, get in touch below.</MediumText>
       <div className="m-8"></div>
 
-      <div className="w-full flex flex-col md:flex-row">
+      <div className="w-full flex flex-col xl:flex-row gap-8 xl:gap-0">
 
         {/* left half  */}
-        <div className="w-1/2 ">
+        <div className="w-full xl:w-1/2 ">
 
           <ColoredTitle>EMAIL</ColoredTitle>
 
@@ -39,8 +39,8 @@ const Contact = () => {
               href="mailto:shishiradhikari1829@example.com"
             >
               <div className="flex items-center text-foreground hover:text-primary/50 w-fit transition-default ">
-                <div className="font-extrabold text-xl sm:text-2xl tracking-wide">{contacts.email}</div>
-                <ArrowUpRight className="h-6 w-6" />
+                <div className="font-extrabold text-md sm:text-xl lg:2xl tracking-wide">{contacts.email}</div>
+                <ArrowUpRight className="h-4 w-4 lg:h-6 lg:w-6" />
               </div>
             </a>
 
@@ -73,7 +73,7 @@ const Contact = () => {
         </div>
 
         {/* right half  */}
-        <div className="w-1/2 flex flex-col gap-4">
+        <div className="w-full xl:w-1/2 flex flex-col gap-4">
           <div className="flex items-baseline">
             <a href={contacts.github}
               target="_blank"

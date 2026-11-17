@@ -1,53 +1,57 @@
 import { useEffect, useState } from "react";
 
-export default function Navbar() {
+function Navbar() {
+    const [scrolled, setScrolled] = useState(false);
 
-  const [scrolled, setScrolled] = useState(false);
+    useEffect(() => {
+        const handleScroll = () => {
+            setScrolled(window.scrollY > 50);
+        };
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 50);
-    };
+        window.addEventListener("scroll", handleScroll, { passive: true });
 
-    window.addEventListener("scroll", handleScroll);
+        handleScroll();
 
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
 
-  return (
-    // <header>
-    //   <nav className="flex justify-between bg-background text-foreground font-bold px-4 sm:px-8 md:px-12 lg:px-20 py-14 h-fit border-b">
-    //     <h2>Shishir Adhikari</h2>
-    //     <div className="flex gap-6 text-secondary-foreground font-medium text-sm">
-    //         <div>About</div>
-    //         <div>Skills</div>
-    //         <div>Projects</div>
-    //         <div>Contact</div>
-    //     </div>
-    //   </nav>
-    // </header>
-    <header className="sticky top-0 z-50 border-b ">
-      <nav
-        className={`mx-auto flex items-center backdrop-blur-md justify-between px-4 sm:px-8 lg:px-20 py-5 transition-[height] duration-300 ease-in-out ${scrolled ? "h-16 bg-background/50 " : "h-36  bg-background"} `}
-      >
+    const links = ["About", "Skills", "Projects", "Contact"];
 
-        <a href="/" className="text-lg font-bold tracking-tight">
-          Shishir Adhikari<span className="text-primary"></span>
-        </a>
-
-        <div className="flex items-center gap-6 text-sm font-medium text-muted-foreground transition-default ">
-          {["About", "Skills", "Projects", "Contact"].map((item) => (
-            <a
-              key={item}
-              href={`#${item.toLowerCase()}`}
-              className="transition-default hover:text-primary hover:scale-110 font-bold "
+    return (
+        <header className=" sticky top-0 z-50">
+            <nav
+                className={` flex flex-col justify-center sm:flex-row sm:items-center sm:justify-between
+                gap-4 sm:gap-0 px-4 sm:px-8 md:px-12 lg:px-20 py-5 sm:py-0
+                border-b backdrop-blur-md
+                transition-all duration-300 ease-in-outt ${scrolled ? "h-16 bg-background/50 " : "h-36  bg-background"} `}
             >
-              {item}
-            </a>
-          ))}
-        </div>
+                {/* Brand */}
+                <a href="/" className={`text-lg font-bold tracking-tight shrink-0 transition-all duration-300 ease-in-out ${scrolled ? "hidden " : "block"}  sm:block `}>
+                    Shishir Adhikari
+                </a>
 
-      </nav>
-    </header>
-  );
+                {/* Navigation links */}
+                <div className="flex items-center justify-center gap-6 sm:gap-6
+                    overflow-x-auto whitespace-nowrap
+                    -mx-4 px-4 sm:mx-0 sm:px-0
+                    [scrollbar-width:none] [&::-webkit-scrollbar]:hidden
+                    text-sm font-medium text-muted-foreground"
+                >
+                    {links.map((item) => (
+                        <a
+                            key={item}
+                            href={`#${item.toLowerCase()}`}
+                            className="shrink-0 transition-colors duration-200
+                            hover:text-primary"
+                        >
+                            {item}
+                        </a>
+                    ))}
+                </div>
+            </nav>
+            
+        </header>
+    );
 }
+
+export default Navbar;
