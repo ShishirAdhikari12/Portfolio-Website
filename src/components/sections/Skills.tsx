@@ -21,7 +21,7 @@ const Skills = () => {
 
 
       {/* skill cards  */}
-      <div className="flex flex-col lg:flex-row lg:justify-between gap-4 mt-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4 mt-6">
         {skills.map((skill, index) => (
           <SkillCard key={index} skillTitle={skill.title} skillHeading={skill.Heading} skillList={skill.skillList} />
         ))}
