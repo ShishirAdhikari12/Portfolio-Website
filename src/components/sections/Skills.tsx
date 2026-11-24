@@ -8,7 +8,7 @@ import { skills } from "@/data/skills"
 
 const Skills = () => {
   return (
-    <Section id="skills">
+    <Section id="skills" className="scroll-mt-24">
       <SectionTitle>
         02 / SKILLS
       </SectionTitle>

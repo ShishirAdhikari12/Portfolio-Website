@@ -7,7 +7,7 @@ import { Rocket, Dot, BookOpen, Check, Compass } from "lucide-react"
 
 const DeveloperSnapshot = () => {
   return (
-    <Section id="developerSnapshot">
+    <Section id="developerSnapshot" className="scroll-mt-24">
       <SectionTitle>
         04 / DEVELOPER SNAPSHOT
       </SectionTitle>

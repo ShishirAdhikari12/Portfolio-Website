@@ -7,7 +7,7 @@ import SmallText from "../common/SmallText"
 
 const About = () => {
   return (
-    <Section id="about">
+    <Section id="about" className="scroll-mt-24">
       <SectionTitle>
         01 / ABOUT
       </SectionTitle>
