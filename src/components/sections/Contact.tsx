@@ -20,7 +20,7 @@ const Contact = () => {
   };
 
   return (
-    <Section id="contact" className="bg-secondary">
+    <Section id="contact" className="scroll-mt-24 bg-secondary">
       <SectionTitle>06 / CONTACT</SectionTitle>
       <h3 className="text-foreground font-extrabold text-4xl sm:text-3xl md:text-4xl lg:text-5xl tracking-tighter mb-6 mt-8">Let’s talk about your next project.</h3>
 

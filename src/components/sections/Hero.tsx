@@ -32,12 +32,20 @@ const Hero = () => {
 
           {/* primary buttons */}
           <div className="my-6 flex gap-4">
-            <MainButton className="text-sm font-semibold py-4 px-6">
-              View Projects
-            </MainButton>
-            <button className="text-sm font-medium py-3 px-5 bg-secondary hover:text-foreground hover:bg-primary/30 transition-default text-secondary-foreground border rounded-md hover:translate-0.5">
+            <a
+              href="#projects"
+              className="rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+            >
+              <MainButton className="text-sm font-semibold py-4 px-6">
+                View Projects
+              </MainButton>
+            </a>
+            <a
+              href="#contact"
+              className="inline-flex items-center justify-center text-sm font-medium py-3 px-5 bg-secondary hover:text-foreground hover:bg-primary/30 transition-default text-secondary-foreground border rounded-md hover:translate-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+            >
               Contact Me
-            </button>
+            </a>
 
           </div>
 

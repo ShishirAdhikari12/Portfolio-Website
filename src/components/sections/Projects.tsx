@@ -13,7 +13,7 @@ const Projects = () => {
     .join(", ")}.`;
 
   return (
-    <Section id="projects">
+    <Section id="projects" className="scroll-mt-24">
       <SectionTitle>
         03 / FEATURED PROJECTS
       </SectionTitle>
